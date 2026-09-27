@@ -3,90 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alla tio matteduggor samlade på ett ställe. Välj en dugga och öppna den som PDF.">
-  <meta name="theme-color" content="#f6f7f2">
-  <title>Matteduggor – öva i din egen takt</title>
+  <meta name="description" content="Matteduggor i PDF-format.">
+  <meta name="theme-color" content="#111113">
+  <title>Duggor</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="./" aria-label="Matteduggor, startsida"><span class="brand-icon" aria-hidden="true">∑</span> Matteduggor</a>
-    <span class="header-note">Lite övning. Mer förståelse.</span>
-  </header>
   <main>
-    <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow"><span aria-hidden="true"></span> DIN SAMLING MED MATTEÖVNINGAR</p>
-      <h1 id="page-title">Nästa steg börjar<br>med en <em>dugga.</em></h1>
-      <p class="description">Tio matteduggor, samlade på ett ställe.<br>Välj en nedan, plocka fram pennan och öva i din egen takt.</p>
-      <div class="math-art" aria-hidden="true"><span>ƒ(x)</span><div class="math-line"></div><small>x² + y²</small></div>
-    </section>
-    <section class="collection" aria-labelledby="collection-title">
-      <div class="section-heading"><h2 id="collection-title">Alla duggor</h2><span>10 dokument <span aria-hidden="true">·</span> PDF</span></div>
-      <div class="dugga-grid">
-        <a class="dugga" href="pdfs/dugga_1.pdf">
-          <span class="number">01</span>
-          <span class="dugga-title">Dugga 1<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_2.pdf">
-          <span class="number">02</span>
-          <span class="dugga-title">Dugga 2<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_3.pdf">
-          <span class="number">03</span>
-          <span class="dugga-title">Dugga 3<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_4.pdf">
-          <span class="number">04</span>
-          <span class="dugga-title">Dugga 4<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_5.pdf">
-          <span class="number">05</span>
-          <span class="dugga-title">Dugga 5<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_6.pdf">
-          <span class="number">06</span>
-          <span class="dugga-title">Dugga 6<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_7.pdf">
-          <span class="number">07</span>
-          <span class="dugga-title">Dugga 7<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_8.pdf">
-          <span class="number">08</span>
-          <span class="dugga-title">Dugga 8<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_9.pdf">
-          <span class="number">09</span>
-          <span class="dugga-title">Dugga 9<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
-        <a class="dugga" href="pdfs/dugga_10.pdf">
-          <span class="number">10</span>
-          <span class="dugga-title">Dugga 10<span class="file-type">PDF-dokument</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-          <span class="sr-only"> – öppna PDF</span>
-        </a>
+    <header class="page-header">
+      <p class="subject">MATEMATIK</p>
+      <h1>Duggor</h1>
+      <p class="description">Öppna en dugga för att visa PDF:en.</p>
+    </header>
+    <section aria-labelledby="documents-title">
+      <div class="list-heading">
+        <h2 id="documents-title">Dokument</h2>
+        <span>10 duggor</span>
       </div>
-      <p class="hint"><span aria-hidden="true">↗</span> Varje dugga öppnas som PDF. Använd webbläsarens bakåtknapp för att återgå.</p>
+      <ol class="documents">
+        <li>
+          <a class="document" href="pdfs/dugga_1.pdf">
+            <span class="document-number" aria-hidden="true">01</span>
+            <span class="document-name">Dugga 1</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_2.pdf">
+            <span class="document-number" aria-hidden="true">02</span>
+            <span class="document-name">Dugga 2</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_3.pdf">
+            <span class="document-number" aria-hidden="true">03</span>
+            <span class="document-name">Dugga 3</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_4.pdf">
+            <span class="document-number" aria-hidden="true">04</span>
+            <span class="document-name">Dugga 4</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_5.pdf">
+            <span class="document-number" aria-hidden="true">05</span>
+            <span class="document-name">Dugga 5</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_6.pdf">
+            <span class="document-number" aria-hidden="true">06</span>
+            <span class="document-name">Dugga 6</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_7.pdf">
+            <span class="document-number" aria-hidden="true">07</span>
+            <span class="document-name">Dugga 7</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_8.pdf">
+            <span class="document-number" aria-hidden="true">08</span>
+            <span class="document-name">Dugga 8</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_9.pdf">
+            <span class="document-number" aria-hidden="true">09</span>
+            <span class="document-name">Dugga 9</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="document" href="pdfs/dugga_10.pdf">
+            <span class="document-number" aria-hidden="true">10</span>
+            <span class="document-name">Dugga 10</span>
+            <span class="document-format">PDF</span>
+            <svg class="document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+      </ol>
     </section>
+    <footer>PDF:en öppnas i samma flik.</footer>
   </main>
-  <footer><span>Matteduggor</span><span>En uppgift i taget.</span></footer>
 </body>
 </html>
